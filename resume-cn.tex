@@ -1,0 +1,158 @@
+\documentclass[11pt,a4paper]{moderncv}
+
+% moderncv themes
+%\moderncvtheme[blue]{casual}                 % optional argument are 'blue' (default), 'orange', 'red', 'green', 'grey' and 'roman' (for roman fonts, instead of sans serif fonts)
+\moderncvtheme[blue]{classic}                % idem
+\usepackage{xunicode, xltxtra}
+\XeTeXlinebreaklocale "zh"
+\widowpenalty=10000
+
+%\setmainfont[Mapping=tex-text]{文泉驿正黑}
+
+% character encoding
+%\usepackage[utf8]{inputenc}                   % replace by the encoding you are using
+\usepackage{CJKutf8}
+
+% adjust the page margins
+\usepackage[scale=0.8]{geometry}
+\recomputelengths                             % required when changes are made to page layout lengths
+\setmainfont[Mapping=tex-text]{Hiragino Sans GB}
+\setsansfont[Mapping=tex-text]{Hiragino Sans GB}
+\CJKtilde
+
+% personal data
+
+%% start of file `template-zh.tex'.
+%% Copyright 2006-2012 Xavier Danaux (xdanaux@gmail.com).
+%
+% This work may be distributed and/or modified under the
+% conditions of the LaTeX Project Public License version 1.3c,
+% available at http://www.latex-project.org/lppl/.
+
+% 个人信息
+\firstname{丁}
+\familyname{培轩}
+\title{个人简历}                      % 可选项、如不需要可删除本行
+\address{海淀区西土城路10号}{100876 北京}             % 可选项、如不需要可删除本行
+\mobile{+86~15901130911}                         % 可选项、如不需要可删除本行
+%\phone{+2~(345)~678~901}                          % 可选项、如不需要可删除本行
+%\fax{+3~(456)~789~012}                            % 可选项、如不需要可删除本行
+\email{dinever@dinever.com}                    % 可选项、如不需要可删除本行
+\homepage{dinever.com}                  % 可选项、如不需要可删除本行
+%\extrainfo{附加信息 (可选项)}                  % 可选项、如不需要可删除本行
+\photo[64pt]{avatar2.jpg}                  % ‘64pt’是图片必须压缩至的高度、‘0.4pt‘是图片边框的宽度 (如不需要可调节至0pt)、’picture‘ 是图片文件的名字;可选项、如不需要可删除本行
+%\quote{引言(可选项)}                           % 可选项、如不需要可删除本行
+
+% 显示索引号;仅用于在简历中使用了引言
+%\makeatletter
+%\renewcommand*{\bibliographyitemlabel}{\@biblabel{\arabic{enumiv}}}
+%\makeatother
+
+% 分类索引
+%\usepackage{multibib}
+%\newcites{book,misc}{{Books},{Others}}
+%----------------------------------------------------------------------------------
+%            内容
+%----------------------------------------------------------------------------------
+\begin{document}
+\maketitle
+
+\section{教育背景}
+\cventry{2010 -- 2014}{本科}{北京邮电大学}{信息与通信工程学院}{}{}  % 第3到第6编码可留白
+
+%\section{毕业论文}
+%\cvitem{题目}{\emph{题目}}
+%\cvitem{导师}{导师}
+%\cvitem{说明}{\small 论文简介}
+
+\section{社区}
+\cventry{Blog}{\url{http://dinever.com}}{技术博客}{日PV约100}{}{}
+\cventry{GitHub}{\url{http://github.com/dinever}}{参与和创建过多个开源项目}{}{}{}
+
+\section{项目经历}
+\renewcommand{\baselinestretch}{1.2}
+
+\cventry{2013~至今}
+{Crotal}
+{Python}
+{个人项目}{\url{http://crotal.com}}
+{Crotal是一个静态博客类站点生成器，使用Python编写，旨在提供最易用的静态站点框架与独立博客搭建方案，用户用Markdown语法完成文章，只需简单的一行命令便可生成整个站点，不用写一行编程语言便可以搭建自己的独立博客，该框架在PyPI已有近万次下载量。\\
+项目主页：\href{http://crotal.org}{crotal.org} ~~~ 项目源码：\url{http://github.com/dinever/crotal}}
+
+\cventry{2013}
+{Litecoin Dealer Bot}
+{Python Django}
+{私人项目}{}
+{莱特币交易机器人，调用交易平台\href{http://MtGox.com}{MtGox}的开放api，每5分钟获取最新、最高、最低交易行情和交易量，通过计算价格趋势，通过微信公共平台与用户交互，通过接收简单的命令，用户可对交易进行人为干预。}
+
+\cventry{2012--2013}
+{FeeYoung}
+{PHP Lucene Java}
+{大学生创新项目 团队项目}{}
+{FeeYoung是一个基于用户行为模型的个性化搜索引擎，通过分析用户的历史搜索行为，为每一个用户建立自己的动态行为模型，用以描述用户的兴趣爱好与行为特征，并基于这一模型对大型搜索引擎的搜索结果进行二次过滤，从而精选出符合用户需求的搜索结果。我与我的朋友用这个作品参加了大学生创新性实验计划并申报为北京市级项目。}
+
+\cventry{2012}
+{EzTimeline}
+{Django应用 Python MySQL Javascript}
+{独立项目}{}
+{旨在提供更低门槛的时间轴页面构建方案，根据用户在CMS上定制的内容，生成一个显示这些内容的时间轴页面，该页面可用于教学、演讲甚至情侣示爱。}
+
+\cventry{2012}
+{基于Scrapy框架实现的网络爬虫}
+{Python MySQL}
+{独立项目}{}
+{采用Python下的Scrapy爬虫框架编写了一个爬取校内社区北邮人论坛的简单爬虫，并实现了基本的增量爬取，通过XPath提取出需要的内容并存储于MySQL数据库。}
+
+\cventry{2012}
+{基于射频技术的门禁系统研究}
+{ARM C}
+{课程项目}{}
+{针对目前RFID门禁系统存在的安全漏洞以及制作门禁卡耗费大量成本的实际问题，提出了将二代身份证应用到RFID门禁系统的设想，并在ARM单片机上编程实现。}
+
+\cventry{2011}
+{基于OpenGL的3D俄罗斯方块游戏}
+{C++ OpenGL}
+{课程项目}{}
+{基于OpenGL与C++实现的俄罗斯方块游戏，作为学校C++课程的一次作业，是班级唯一一个用OpenGL实现3D效果的作品。}
+
+\section{语言技能}
+\cvline{英语}{\textbf{CET-6: 524}，擅长读写，经常阅读英文文档、教程，并在Reddit等社区与外国人交流。}
+\cvline{普通话}{母语}
+
+\section{计算机技能}
+\cvline{编程语言}{Python == C > PHP == Javascript == Ruby == Java  > C++ }
+\cvline{数据库}{MySQL, MongoDB}
+\cvline{框架}{Django, Express(Node.js), Rails}
+\cvline{工具}{Linux, Vim, Git, \LaTeX}
+
+
+\section{校园经历} % (fold)
+\cventry{2012--2013}
+{北京邮电大学吉他协会会长}{}{}{}{在任期间负责在校内科学会堂策划举办三次校园大型摇滚演出“北邮摇滚夜”，并在北京各酒吧合作举办过校园摇滚专场，开设过多期校园吉他班，组织多次吉他团购。}
+\cventry{2011--2012}
+{音乐节校园票务代理}{}{}{}{在摩登天空音乐节、草莓音乐节、东派地坛民谣音乐节期间负责本校学生票代售。}
+\cventry{2011, 05}
+{北京邮电大学阳光志愿者协会}{}{}{}{参与志愿者活动，并为该协会创作会歌。}
+
+\closesection{}                   % needed to renewcommands
+\renewcommand{\listitemsymbol}{-} % change the symbol for lists
+
+% 来自BibTeX文件但不使用multibib包的出版物
+%\renewcommand*{\bibliographyitemlabel}{\@biblabel{\arabic{enumiv}}}% BibTeX的数字标签
+\nocite{*}
+\bibliographystyle{plain}
+\bibliography{publications}                    % 'publications' 是BibTeX文件的文件名
+
+% 来自BibTeX文件并使用multibib包的出版物
+%\section{出版物}
+%\nocitebook{book1,book2}
+%\bibliographystylebook{plain}
+%\bibliographybook{publications}               % 'publications' 是BibTeX文件的文件名
+%\nocitemisc{misc1,misc2,misc3}
+%\bibliographystylemisc{plain}
+%\bibliographymisc{publications}               % 'publications' 是BibTeX文件的文件名
+
+\end{document}
+
+
+%% 文件结尾 `template-zh.tex'.
